@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.igorbresende.ubwear.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "com.igorbresende.ubwear.app-main-35:/layout/activity_main.xml"
+    }
+]

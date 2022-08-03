@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.igorbresende.ubwear"
+4    android:versionCode="1006"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:7:5-68
+12-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:7:22-65
+13
+14    <application
+14-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:9:5-28:19
+15        android:name="com.igorbresende.ubwear.MyApplication"
+15-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:14:9-61
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] /Users/igorresende/.gradle/caches/transforms-3/8a9e634b9fa2342236d9d40ba886a153/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:10:9-43
+20        android:label="@string/app_name"
+20-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_launcher"
+21-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:12:9-48
+22        android:supportsRtl="true"
+22-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:15:9-40
+25        <activity
+25-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:18:9-26:20
+26            android:name="com.igorbresende.ubwear.MainActivity"
+26-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:18:19-70
+27            android:exported="true"
+27-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:20:13-36
+28            android:resizeableActivity="true" >
+28-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:19:13-46
+29            <intent-filter>
+29-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:22:13-25:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:23:17-69
+30-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:23:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:24:17-77
+32-->/Users/igorresende/AndroidStudioProjects/Message-communication-using-Wearable-Data-Layer-Android-Wear-OS/app/src/main/AndroidManifest.xml:24:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->[com.google.android.gms:play-services-base:17.5.0] /Users/igorresende/.gradle/caches/transforms-3/c0e4349714ee9e02503f8a11589f8afd/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+36            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+36-->[com.google.android.gms:play-services-base:17.5.0] /Users/igorresende/.gradle/caches/transforms-3/c0e4349714ee9e02503f8a11589f8afd/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+37            android:exported="false"
+37-->[com.google.android.gms:play-services-base:17.5.0] /Users/igorresende/.gradle/caches/transforms-3/c0e4349714ee9e02503f8a11589f8afd/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+38            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+38-->[com.google.android.gms:play-services-base:17.5.0] /Users/igorresende/.gradle/caches/transforms-3/c0e4349714ee9e02503f8a11589f8afd/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+39
+40        <meta-data
+40-->[com.google.android.gms:play-services-basement:17.5.0] /Users/igorresende/.gradle/caches/transforms-3/11fead5942c7fe809aca6f6fc9e45ab6/transformed/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+41            android:name="com.google.android.gms.version"
+41-->[com.google.android.gms:play-services-basement:17.5.0] /Users/igorresende/.gradle/caches/transforms-3/11fead5942c7fe809aca6f6fc9e45ab6/transformed/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
+42            android:value="@integer/google_play_services_version" />
+42-->[com.google.android.gms:play-services-basement:17.5.0] /Users/igorresende/.gradle/caches/transforms-3/11fead5942c7fe809aca6f6fc9e45ab6/transformed/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.2.0-beta01] /Users/igorresende/.gradle/caches/transforms-3/e464d60a5381ce9a1c621c36aa2985c5/transformed/jetified-emoji2-1.2.0-beta01/AndroidManifest.xml:25:9-33:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.2.0-beta01] /Users/igorresende/.gradle/caches/transforms-3/e464d60a5381ce9a1c621c36aa2985c5/transformed/jetified-emoji2-1.2.0-beta01/AndroidManifest.xml:26:13-67
+46            android:authorities="com.igorbresende.ubwear.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.2.0-beta01] /Users/igorresende/.gradle/caches/transforms-3/e464d60a5381ce9a1c621c36aa2985c5/transformed/jetified-emoji2-1.2.0-beta01/AndroidManifest.xml:27:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.2.0-beta01] /Users/igorresende/.gradle/caches/transforms-3/e464d60a5381ce9a1c621c36aa2985c5/transformed/jetified-emoji2-1.2.0-beta01/AndroidManifest.xml:28:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.2.0-beta01] /Users/igorresende/.gradle/caches/transforms-3/e464d60a5381ce9a1c621c36aa2985c5/transformed/jetified-emoji2-1.2.0-beta01/AndroidManifest.xml:30:13-32:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.2.0-beta01] /Users/igorresende/.gradle/caches/transforms-3/e464d60a5381ce9a1c621c36aa2985c5/transformed/jetified-emoji2-1.2.0-beta01/AndroidManifest.xml:31:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.2.0-beta01] /Users/igorresende/.gradle/caches/transforms-3/e464d60a5381ce9a1c621c36aa2985c5/transformed/jetified-emoji2-1.2.0-beta01/AndroidManifest.xml:32:17-49
+51            <meta-data
+51-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/igorresende/.gradle/caches/transforms-3/4c82b6cc42eda4ad575c4986b7e6c1d4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/igorresende/.gradle/caches/transforms-3/4c82b6cc42eda4ad575c4986b7e6c1d4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+53                android:value="androidx.startup" />
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/igorresende/.gradle/caches/transforms-3/4c82b6cc42eda4ad575c4986b7e6c1d4/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+54        </provider>
+55    </application>
+56
+57</manifest>

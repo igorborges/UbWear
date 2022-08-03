@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/leftMessage"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:gravity="left|center"-->
+    <!--        android:padding="@dimen/inner_frame_layout_padding"-->
+    <!--        android:text="Driver"-->
+    <!--        android:textSize="10sp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <TextView
+            android:id="@+id/upperMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textColor="#AAA"
+            android:textSize="10sp"
+            tools:text="Pedindo Uber!" />
+
+        <LinearLayout
+            android:id="@+id/sidTextViewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="@android:style/TextAppearance.Material.Body2"
+                android:textColor="#CDDC39"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/timeUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/main"
+                android:gravity="center"
+                android:text="min"
+                android:textColor="#AAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lowerMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Aguarde até que um motorista\naceite a corrida..."
+            android:textColor="#AAA"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</androidx.wear.widget.BoxInsetLayout>

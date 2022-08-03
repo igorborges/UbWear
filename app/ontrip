@@ -1,0 +1,107 @@
+{
+    "status": "success",
+    "data": {
+        "city": {
+            "cityId": "2125",
+            "defaultVehicleViewId": 20021817,
+            "vehicleViews": {},
+            "productsUnavailableMessage": "Infelizmente, a Uber não está disponível na sua região."
+        },
+        "clientStatus": {
+            "status": "OnTrip"
+        },
+        "eyeball": null,
+        "metadata": {
+            "pollingIntervalMs": 4000
+        },
+        "trip": {
+            "uuid": "b1b79bfe-316f-4cda-9112-95bef18af734",
+            "conciergeInfo": {},
+            "contact": {
+                "sms": "+553130580179",
+                "voice": "+553130580179"
+            },
+            "destination": {
+                "latitude": -19.924183,
+                "longitude": -43.952393,
+                "type": "helix-personal-hotspot",
+                "id": "285195641",
+                "uuid": "3ada2087-b11d-466d-98cb-0209677a62d5",
+                "address": "Rua Paracatu, 705 - Barro Preto - Belo Horizonte - MG, 30180-094",
+                "formattedAddress": "Rua Paracatu, 705 - Barro Preto - Belo Horizonte - MG, 30180-094",
+                "addressComponents": null,
+                "nickname": "",
+                "language": "pt",
+                "title": "Rua Paracatu, 705 - Barro Preto",
+                "subtitle": "Belo Horizonte - MG, 30180-094",
+                "reference": "37245a47-9ed5-2815-c933-bb71135275ed",
+                "referenceType": "uber_places",
+                "address_components": null,
+                "components": null,
+                "shortAddress": "Rua Paracatu, 705 - Barro Preto"
+            },
+            "driver": {
+                "displayCompany": false,
+                "name": "Matheus",
+                "partnerCompany": "",
+                "pictureUrl": "https://d1w2poirtb3as9.cloudfront.net/d412c0f3-bc96-4027-b19e-4c20897b9000.jpeg?Expires=1659082878&Signature=EuhxSCm0QRI2iOWH5caoVJT8tl4AVFNsymxwLw60NGCaX8it9EvBu1kV~eJr6JRqqmsKhmmDNT~exJZgR~xqrDAZetKtU-jG2oEPcFy7wQBFW66mCHinwuQsFZ~ZCGoXD~4EURPjZ4dJw2bIYInV29ALvJAsAGFeKm3pnU2VgsT0Q8u4YZEQSJs433e6M0vzHP6czywsCdUIMjsL7ADru6sAM3bxQ1RazoGwg~Pq~nzPXiGBFSRAhzQHkk5zHw~RtsACkVvgxL2LqnAxQ0d-uDl4E-IeaezUtPn-H7EnuENU7SW9hJaEB2VG1cqm74TTF90Mc-FUJDvSmRfyNOeyeg__&Key-Pair-Id=APKAJSDH2OZQQSA64LQQ",
+                "rating": 5,
+                "status": "DrivingClient",
+                "uuid": "37192945-7d73-461a-a560-d9ace75580fa"
+            },
+            "eta": 10,
+            "etaString": "10 minutos",
+            "etaStringShort": "10 min",
+            "etaToDestination": 577,
+            "fareEstimateRange": null,
+            "formattedUpfrontFareString": "R$ 16,05",
+            "forwardDispatchLocation": null,
+            "paymentProfileUUID": "dbe46099-12d1-4980-9324-258ee066ffd8",
+            "pickupLocation": {
+                "latitude": -19.933998,
+                "longitude": -43.93662,
+                "type": "helix-poi-suggestion-snapped",
+                "id": "",
+                "uuid": "00304a3f-4650-4f2c-99bc-9d9e2249c354",
+                "address": "Rua Santa Rita Durão, 1185 - Savassi - Belo Horizonte - MG, 30140-111",
+                "formattedAddress": "Rua Santa Rita Durão, 1185 - Savassi - Belo Horizonte - MG, 30140-111",
+                "addressComponents": null,
+                "nickname": "Rua Santa Rita Durão, 1185 - Savassi",
+                "language": "pt",
+                "title": "Rua Santa Rita Durão, 1185 - Savassi",
+                "subtitle": "Belo Horizonte - MG, 30140-111",
+                "reference": "01831ee6-7591-c34b-0d31-e08f44256666",
+                "referenceType": "uber_places",
+                "address_components": null,
+                "components": null,
+                "shortAddress": "Rua Santa Rita Durão, 1185 - Savassi"
+            },
+            "polylines": [
+                "zvsxB~wdkGIf@IVy@nFERCTy@nF{@|F{@tEEXETAZq@bDQdAw@rFEZq@pFQ~@]xBShA_@hCUxAg@XMHuBjAkB`Aa@RQJs@\\uAr@uAx@OHGB{@d@c@TsBdAwAz@M?KCGOl@}DpBZ"
+            ],
+            "upfrontFareString": "16.05",
+            "useCredits": true,
+            "tripStatusMessage": {
+                "detailBackgroundColor": "BACKGROUND_ALWAYS_DARK",
+                "detailMode": "TimeOfDropoff",
+                "title": "A caminho de: Rua Paracatu, 705 - Barro Preto"
+            },
+            "vehicle": {
+                "licensePlate": "RGB2A86",
+                "path": {
+                    "latitude": -19.930862117225285,
+                    "longitude": -43.93872259140613,
+                    "course": 285.8198081224577,
+                    "speed": 0
+                },
+                "pictureImages": null,
+                "vehicleColorTranslatedName": "Prata",
+                "vehicleType": {
+                    "make": "Volkswagen",
+                    "model": "Gol"
+                },
+                "vehicleViewId": 5433
+            }
+        }
+    }
+}
