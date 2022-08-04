@@ -3,10 +3,10 @@ package com.igorbresende.ubwear
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
-import android.graphics.Color
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
 import android.os.StrictMode
 import android.os.StrictMode.ThreadPolicy
 import android.util.Log
@@ -48,6 +48,10 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope(),
 
     private var finalCookies = ""
     private var gotCookies = false
+
+    var handler = Handler()
+    var runnable: Runnable? = null
+    var delay = 5000
 
     @RequiresApi(Build.VERSION_CODES.N)
     private var languageMaps = LanguageMaps().getMap(Locale.getDefault().language);
@@ -108,17 +112,16 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope(),
         binding.webview.loadUrl(languageMaps["uberUrl"].toString())
 
         binding.checkwearablesButton.setOnClickListener {
-            if(!gotCookies) {
-                Toast.makeText(
-                    activityContext,
-                    languageMaps["notLoggedIn"],
-                    Toast.LENGTH_LONG
-                ).show()
-            } else if (!wearableDeviceConnected) {
-                val tempAct: Activity = activityContext as MainActivity
-                //Couroutine
-                initialiseDevicePairing(tempAct)
-            }
+            onClickButton(true)
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.N)
+    private fun onClickButton(showToast: Boolean) {
+        if (!wearableDeviceConnected) {
+            val tempAct: Activity = activityContext as MainActivity
+            //Couroutine
+            initialiseDevicePairing(tempAct, showToast)
         }
     }
 
@@ -149,7 +152,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope(),
 
     @RequiresApi(Build.VERSION_CODES.N)
     @SuppressLint("SetTextI18n", "SetJavaScriptEnabled")
-    private fun initialiseDevicePairing(tempAct: Activity) {
+    private fun initialiseDevicePairing(tempAct: Activity, showToast: Boolean) {
         //Coroutine
         launch(Dispatchers.Default) {
             var getNodesResBool: BooleanArray? = null
@@ -166,53 +169,70 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope(),
                 if (getNodesResBool!![0]) {
                     //if message Acknowlegement Received
                     if (getNodesResBool[1]) {
-//                        Toast.makeText(
-//                            activityContext,
-//                            languageMaps["devicePaired"],
-//                            Toast.LENGTH_LONG
-//                        ).show()
-                        wearableDeviceConnected = true
+                        if (showToast && !gotCookies) {
+                            Toast.makeText(
+                                activityContext,
+                                languageMaps["devicePaired"],
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
 
-                        Toast.makeText(
-                            activityContext,
-                            languageMaps["successfulConfigurationToast"],
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        if (gotCookies) {
+                            Toast.makeText(
+                                activityContext,
+                                languageMaps["successfulConfigurationToast"],
+                                Toast.LENGTH_SHORT
+                            ).show()
 
-                        val nodeId: String = messageEvent?.sourceNodeId!!
-                        // Set the data of the message to be the bytes of the Uri.
-                        val payload: ByteArray =
-                            (finalCookies).toByteArray()
+                            val nodeId: String = messageEvent?.sourceNodeId!!
+                            // Set the data of the message to be the bytes of the Uri.
+                            val payload: ByteArray =
+                                (finalCookies).toByteArray()
 
-                        // Send the rpc
-                        // Instantiates clients without member variables, as clients are inexpensive to
-                        // create. (They are cached and shared between GoogleApi instances.)
-                        val sendMessageTask =
-                            Wearable.getMessageClient(activityContext!!)
-                                .sendMessage(nodeId, MESSAGE_ITEM_RECEIVED_PATH, payload)
+                            // Send the rpc
+                            // Instantiates clients without member variables, as clients are inexpensive to
+                            // create. (They are cached and shared between GoogleApi instances.)
+                            val sendMessageTask =
+                                Wearable.getMessageClient(activityContext!!)
+                                    .sendMessage(nodeId, MESSAGE_ITEM_RECEIVED_PATH, payload)
 
-                        sendMessageTask.addOnCompleteListener {
-                            if (it.isSuccessful) {
-                                Log.d("send1", "Message sent successfully")
-                            } else {
-                                Log.d("send1", "Message failed.")
+                            sendMessageTask.addOnCompleteListener {
+                                if (it.isSuccessful) {
+                                    Log.d("send1", "Message sent successfully")
+                                } else {
+                                    Log.d("send1", "Message failed.")
+                                }
                             }
+                            wearableDeviceConnected = true
                         }
 
                     } else {
-                        Toast.makeText(
-                            activityContext,
-                            languageMaps["openWearApp"],
-                            Toast.LENGTH_LONG
-                        ).show()
+
+                        if (gotCookies) {
+                            Toast.makeText(
+                                activityContext,
+                                languageMaps["openWearApp"],
+                                Toast.LENGTH_LONG
+                            ).show()
+                        } else {
+                            if (showToast) {
+                                Toast.makeText(
+                                    activityContext,
+                                    languageMaps["notLoggedIn"],
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            }
+                        }
                         wearableDeviceConnected = false
                     }
                 } else {
-                    Toast.makeText(
-                        activityContext,
-                        languageMaps["noWearableFound"],
-                        Toast.LENGTH_LONG
-                    ).show()
+                    if (showToast) {
+                        Toast.makeText(
+                            activityContext,
+                            languageMaps["noWearableFound"],
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
                     wearableDeviceConnected = false
                 }
             }
@@ -398,7 +418,14 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope(),
     }
 
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onResume() {
+        handler.postDelayed(java.lang.Runnable {
+            handler.postDelayed(runnable!!, delay.toLong())
+            if (gotCookies) {
+                onClickButton(false)
+            }
+        }.also { runnable = it }, delay.toLong())
         super.onResume()
         try {
             Wearable.getDataClient(activityContext!!).addListener(this)

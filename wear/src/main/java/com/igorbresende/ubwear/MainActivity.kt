@@ -168,11 +168,10 @@ class MainActivity : AppCompatActivity(), AmbientModeSupport.AmbientCallbackProv
                         val intent = Intent(this, UbWearActivity::class.java)
                         startActivity(intent)
                     } else {
+                        binding.deviceconnectionStatusTv.text = languageMaps["errorMessage"]
                         sbTemp.append("something went wrong")
                     }
                     binding.messagelogTextView.append(sbTemp)
-
-
 
                     binding.scrollviewTextMessageLog.requestFocus()
                     binding.scrollviewTextMessageLog.post {

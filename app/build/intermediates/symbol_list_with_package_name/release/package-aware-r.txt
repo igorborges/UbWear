@@ -2855,9 +2855,6 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
-id csidEditText
-id csidTextView
-id csidTextViewLayout
 id currentState
 id custom
 id customPanel
@@ -2875,7 +2872,6 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id deviceconnectionStatusTv
 id dialog_button
 id dimensions
 id direct
@@ -2993,7 +2989,6 @@ id material_value_index
 id matrix
 id media_actions
 id message
-id messagelogTextView
 id middle
 id mini
 id month_grid
@@ -3088,7 +3083,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id scrollviewText
 id search_badge
 id search_bar
 id search_button
@@ -3102,7 +3096,6 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-id sendmessageButton
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3110,9 +3103,6 @@ id showCustom
 id showHome
 id showTitle
 id sidCsidInfo
-id sidEditText
-id sidTextView
-id sidTextViewLayout
 id sin
 id skipCollapsed
 id skipped
@@ -3193,7 +3183,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tutorialTextView
 id unchecked
 id uniform
 id unlabeled

@@ -48,12 +48,12 @@
         "source": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-main-35:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-merged_res-33:/layout_activity_main.xml.flat",
-        "source": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-main-35:/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-main-35:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-main-35:/layout/activity_main.xml"
     },
     {
         "merged": "/Users/igorresende/.gradle/daemon/7.3.3/com.igorbresende.ubwear.app-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",

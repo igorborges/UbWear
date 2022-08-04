@@ -8,15 +8,12 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.textfield.TextInputEditText;
 import com.igorbresende.ubwear.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -33,76 +30,22 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button checkwearablesButton;
 
   @NonNull
-  public final TextInputEditText csidEditText;
-
-  @NonNull
-  public final TextView csidTextView;
-
-  @NonNull
-  public final LinearLayout csidTextViewLayout;
-
-  @NonNull
-  public final TextView deviceconnectionStatusTv;
-
-  @NonNull
-  public final TextView messagelogTextView;
-
-  @NonNull
-  public final ScrollView scrollView;
-
-  @NonNull
-  public final ScrollView scrollviewText;
-
-  @NonNull
-  public final Button sendmessageButton;
-
-  @NonNull
   public final LinearLayout sidCsidInfo;
-
-  @NonNull
-  public final TextInputEditText sidEditText;
-
-  @NonNull
-  public final TextView sidTextView;
-
-  @NonNull
-  public final LinearLayout sidTextViewLayout;
 
   @NonNull
   public final MaterialToolbar toolbar;
 
   @NonNull
-  public final TextView tutorialTextView;
-
-  @NonNull
   public final WebView webview;
 
   private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull AppBarLayout appbarlayout,
-      @NonNull Button checkwearablesButton, @NonNull TextInputEditText csidEditText,
-      @NonNull TextView csidTextView, @NonNull LinearLayout csidTextViewLayout,
-      @NonNull TextView deviceconnectionStatusTv, @NonNull TextView messagelogTextView,
-      @NonNull ScrollView scrollView, @NonNull ScrollView scrollviewText,
-      @NonNull Button sendmessageButton, @NonNull LinearLayout sidCsidInfo,
-      @NonNull TextInputEditText sidEditText, @NonNull TextView sidTextView,
-      @NonNull LinearLayout sidTextViewLayout, @NonNull MaterialToolbar toolbar,
-      @NonNull TextView tutorialTextView, @NonNull WebView webview) {
+      @NonNull Button checkwearablesButton, @NonNull LinearLayout sidCsidInfo,
+      @NonNull MaterialToolbar toolbar, @NonNull WebView webview) {
     this.rootView = rootView;
     this.appbarlayout = appbarlayout;
     this.checkwearablesButton = checkwearablesButton;
-    this.csidEditText = csidEditText;
-    this.csidTextView = csidTextView;
-    this.csidTextViewLayout = csidTextViewLayout;
-    this.deviceconnectionStatusTv = deviceconnectionStatusTv;
-    this.messagelogTextView = messagelogTextView;
-    this.scrollView = scrollView;
-    this.scrollviewText = scrollviewText;
-    this.sendmessageButton = sendmessageButton;
     this.sidCsidInfo = sidCsidInfo;
-    this.sidEditText = sidEditText;
-    this.sidTextView = sidTextView;
-    this.sidTextViewLayout = sidTextViewLayout;
     this.toolbar = toolbar;
-    this.tutorialTextView = tutorialTextView;
     this.webview = webview;
   }
 
@@ -145,87 +88,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.csidEditText;
-      TextInputEditText csidEditText = ViewBindings.findChildViewById(rootView, id);
-      if (csidEditText == null) {
-        break missingId;
-      }
-
-      id = R.id.csidTextView;
-      TextView csidTextView = ViewBindings.findChildViewById(rootView, id);
-      if (csidTextView == null) {
-        break missingId;
-      }
-
-      id = R.id.csidTextViewLayout;
-      LinearLayout csidTextViewLayout = ViewBindings.findChildViewById(rootView, id);
-      if (csidTextViewLayout == null) {
-        break missingId;
-      }
-
-      id = R.id.deviceconnectionStatusTv;
-      TextView deviceconnectionStatusTv = ViewBindings.findChildViewById(rootView, id);
-      if (deviceconnectionStatusTv == null) {
-        break missingId;
-      }
-
-      id = R.id.messagelogTextView;
-      TextView messagelogTextView = ViewBindings.findChildViewById(rootView, id);
-      if (messagelogTextView == null) {
-        break missingId;
-      }
-
-      id = R.id.scrollView;
-      ScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
-      if (scrollView == null) {
-        break missingId;
-      }
-
-      id = R.id.scrollviewText;
-      ScrollView scrollviewText = ViewBindings.findChildViewById(rootView, id);
-      if (scrollviewText == null) {
-        break missingId;
-      }
-
-      id = R.id.sendmessageButton;
-      Button sendmessageButton = ViewBindings.findChildViewById(rootView, id);
-      if (sendmessageButton == null) {
-        break missingId;
-      }
-
       id = R.id.sidCsidInfo;
       LinearLayout sidCsidInfo = ViewBindings.findChildViewById(rootView, id);
       if (sidCsidInfo == null) {
         break missingId;
       }
 
-      id = R.id.sidEditText;
-      TextInputEditText sidEditText = ViewBindings.findChildViewById(rootView, id);
-      if (sidEditText == null) {
-        break missingId;
-      }
-
-      id = R.id.sidTextView;
-      TextView sidTextView = ViewBindings.findChildViewById(rootView, id);
-      if (sidTextView == null) {
-        break missingId;
-      }
-
-      id = R.id.sidTextViewLayout;
-      LinearLayout sidTextViewLayout = ViewBindings.findChildViewById(rootView, id);
-      if (sidTextViewLayout == null) {
-        break missingId;
-      }
-
       id = R.id.toolbar;
       MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
-        break missingId;
-      }
-
-      id = R.id.tutorialTextView;
-      TextView tutorialTextView = ViewBindings.findChildViewById(rootView, id);
-      if (tutorialTextView == null) {
         break missingId;
       }
 
@@ -236,9 +107,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((RelativeLayout) rootView, appbarlayout, checkwearablesButton,
-          csidEditText, csidTextView, csidTextViewLayout, deviceconnectionStatusTv,
-          messagelogTextView, scrollView, scrollviewText, sendmessageButton, sidCsidInfo,
-          sidEditText, sidTextView, sidTextViewLayout, toolbar, tutorialTextView, webview);
+          sidCsidInfo, toolbar, webview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

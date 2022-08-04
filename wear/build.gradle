@@ -9,7 +9,7 @@ android {
         applicationId "com.igorbresende.ubwear"
         minSdkVersion 25
         targetSdkVersion 33
-        versionCode 108
+        versionCode 109
         versionName "1.0"
     }
 

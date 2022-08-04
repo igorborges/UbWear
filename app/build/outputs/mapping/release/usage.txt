@@ -3092,40 +3092,37 @@ androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateRequest
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateThread
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$OnInflateFinishedListener
 androidx.asynclayoutinflater.view.AsyncLayoutInflater
-androidx.cardview.R$attr:
-    public static final int cardBackgroundColor
-    public static final int cardCornerRadius
-    public static final int cardElevation
-    public static final int cardMaxElevation
-    public static final int cardPreventCornerOverlap
-    public static final int cardUseCompatPadding
-    public static final int contentPadding
-    public static final int contentPaddingBottom
-    public static final int contentPaddingLeft
-    public static final int contentPaddingRight
-    public static final int contentPaddingTop
-    private void <init>()
-androidx.cardview.R$color:
-    private void <init>()
-androidx.cardview.R$dimen:
-    public static final int cardview_default_elevation
-    public static final int cardview_default_radius
-    private void <init>()
-androidx.cardview.R$style:
-    public static final int Base_CardView
-    public static final int CardView_Dark
-    public static final int CardView_Light
-    private void <init>()
-androidx.cardview.R$styleable:
-    private void <init>()
+androidx.cardview.R$attr
+androidx.cardview.R$color
+androidx.cardview.R$dimen
+androidx.cardview.R$style
+androidx.cardview.R$styleable
 androidx.cardview.R
+androidx.cardview.widget.CardView$1
 androidx.cardview.widget.CardView:
+    final android.graphics.Rect mShadowBounds
     public void <init>(android.content.Context)
+    public void <init>(android.content.Context,android.util.AttributeSet)
+    public void <init>(android.content.Context,android.util.AttributeSet,int)
+    static synthetic void access$001(androidx.cardview.widget.CardView,int,int,int,int)
+    static synthetic void access$101(androidx.cardview.widget.CardView,int)
+    static synthetic void access$201(androidx.cardview.widget.CardView,int)
     public void setContentPadding(int,int,int,int)
+androidx.cardview.widget.CardViewApi21Impl:
+    public void initialize(androidx.cardview.widget.CardViewDelegate,android.content.Context,android.content.res.ColorStateList,float,float,float)
+androidx.cardview.widget.CardViewBaseImpl:
+    private androidx.cardview.widget.RoundRectDrawableWithShadow createBackground(android.content.Context,android.content.res.ColorStateList,float,float,float)
+    public void initialize(androidx.cardview.widget.CardViewDelegate,android.content.Context,android.content.res.ColorStateList,float,float,float)
+androidx.cardview.widget.CardViewDelegate:
+    public abstract void setCardBackground(android.graphics.drawable.Drawable)
 androidx.cardview.widget.CardViewImpl:
+    public abstract void initialize(androidx.cardview.widget.CardViewDelegate,android.content.Context,android.content.res.ColorStateList,float,float,float)
     public abstract void updatePadding(androidx.cardview.widget.CardViewDelegate)
+androidx.cardview.widget.RoundRectDrawable:
+    void <init>(android.content.res.ColorStateList,float)
 androidx.cardview.widget.RoundRectDrawableWithShadow:
     private static final float SHADOW_MULTIPLIER
+    void <init>(android.content.res.Resources,android.content.res.ColorStateList,float,float,float)
 androidx.collection.ArrayMap:
     public boolean containsAll(java.util.Collection)
     public boolean removeAll(java.util.Collection)
@@ -21767,7 +21764,13 @@ com.igorbresende.ubwear.BuildConfig
 com.igorbresende.ubwear.LanguageMaps:
     public java.lang.String getLanguage(java.lang.String,java.lang.String)
 com.igorbresende.ubwear.MainActivity:
+    public final int getDelay()
+    public final android.os.Handler getHandler()
+    public final java.lang.Runnable getRunnable()
     public final void setActivityContext(android.content.Context)
+    public final void setDelay(int)
+    public final void setHandler(android.os.Handler)
+    public final void setRunnable(java.lang.Runnable)
 com.igorbresende.ubwear.R$anim
 com.igorbresende.ubwear.R$animator
 com.igorbresende.ubwear.R$attr
@@ -28444,145 +28447,84 @@ androidx.activity.OnBackPressedCallback:
 androidx.activity.OnBackPressedDispatcher:
     public final androidx.activity.Cancellable addCancellableCallback(androidx.activity.OnBackPressedCallback)
 androidx.activity.R$id:
+    public static final int Animation_AppCompat_Tooltip
+    public static final int Theme_AppCompat_CompactMenu
+    public static final int Theme_AppCompat_Empty
+    public static final int Theme_AppCompat_Light
+    public static final int abc_ab_share_pack_mtrl_alpha
     public static final int abc_action_bar_title_item
     public static final int abc_action_menu_item_layout
     public static final int abc_action_menu_layout
     public static final int abc_action_mode_close_item_material
+    public static final int abc_btn_borderless_material
+    public static final int abc_btn_check_material
+    public static final int abc_btn_check_material_anim
+    public static final int abc_btn_colored_material
+    public static final int abc_btn_default_mtrl_shape
+    public static final int abc_btn_radio_material
+    public static final int abc_btn_radio_material_anim
+    public static final int abc_cab_background_internal_bg
+    public static final int abc_cab_background_top_material
+    public static final int abc_cab_background_top_mtrl_alpha
     public static final int abc_cascading_menu_item_layout
+    public static final int abc_decor_view_status_guard
+    public static final int abc_decor_view_status_guard_light
+    public static final int abc_dialog_material_background
     public static final int abc_dialog_title_material
+    public static final int abc_edit_text_material
     public static final int abc_expanded_menu_layout
+    public static final int abc_ic_ab_back_material
+    public static final int abc_ic_commit_search_api_mtrl_alpha
+    public static final int abc_ic_menu_copy_mtrl_am_alpha
+    public static final int abc_ic_menu_cut_mtrl_alpha
+    public static final int abc_ic_menu_paste_mtrl_am_alpha
+    public static final int abc_ic_menu_selectall_mtrl_alpha
+    public static final int abc_ic_menu_share_mtrl_alpha
+    public static final int abc_list_divider_mtrl_alpha
     public static final int abc_list_menu_item_checkbox
     public static final int abc_list_menu_item_icon
     public static final int abc_list_menu_item_layout
     public static final int abc_list_menu_item_radio
+    public static final int abc_menu_hardkey_panel_mtrl_mult
+    public static final int abc_popup_background_mtrl_mult
     public static final int abc_popup_menu_header_item_layout
     public static final int abc_popup_menu_item_layout
+    public static final int abc_ratingbar_indicator_material
+    public static final int abc_ratingbar_material
+    public static final int abc_ratingbar_small_material
     public static final int abc_screen_simple
     public static final int abc_screen_simple_overlay_action_mode
     public static final int abc_screen_toolbar
     public static final int abc_search_dropdown_item_icons_2line
     public static final int abc_search_view
+    public static final int abc_seekbar_thumb_material
+    public static final int abc_seekbar_tick_mark_material
+    public static final int abc_seekbar_track_material
+    public static final int abc_spinner_mtrl_am_alpha
+    public static final int abc_spinner_textfield_background_material
+    public static final int abc_star_black_48dp
+    public static final int abc_star_half_black_48dp
+    public static final int abc_switch_thumb_material
+    public static final int abc_switch_track_mtrl_alpha
+    public static final int abc_tab_indicator_material
+    public static final int abc_text_cursor_material
+    public static final int abc_text_select_handle_left_mtrl
+    public static final int abc_text_select_handle_middle_mtrl
+    public static final int abc_text_select_handle_right_mtrl
+    public static final int abc_textfield_activated_mtrl_alpha
+    public static final int abc_textfield_default_mtrl_alpha
+    public static final int abc_textfield_search_activated_mtrl_alpha
+    public static final int abc_textfield_search_default_mtrl_alpha
+    public static final int abc_textfield_search_material
+    public static final int abc_tint_btn_checkable
+    public static final int abc_tint_default
+    public static final int abc_tint_edittext
+    public static final int abc_tint_seek_thumb
+    public static final int abc_tint_spinner
+    public static final int abc_tint_switch_track
     public static final int abc_tooltip
-    public static final int accessibility_action_clickable_span
-    public static final int accessibility_custom_action_0
-    public static final int accessibility_custom_action_1
-    public static final int accessibility_custom_action_10
-    public static final int accessibility_custom_action_11
-    public static final int accessibility_custom_action_12
-    public static final int accessibility_custom_action_13
-    public static final int accessibility_custom_action_14
-    public static final int accessibility_custom_action_15
-    public static final int accessibility_custom_action_16
-    public static final int accessibility_custom_action_17
-    public static final int accessibility_custom_action_18
-    public static final int accessibility_custom_action_19
-    public static final int accessibility_custom_action_2
-    public static final int accessibility_custom_action_20
-    public static final int accessibility_custom_action_21
-    public static final int accessibility_custom_action_22
-    public static final int accessibility_custom_action_23
-    public static final int accessibility_custom_action_24
-    public static final int accessibility_custom_action_25
-    public static final int accessibility_custom_action_26
-    public static final int accessibility_custom_action_27
-    public static final int accessibility_custom_action_28
-    public static final int accessibility_custom_action_29
-    public static final int accessibility_custom_action_3
-    public static final int accessibility_custom_action_30
-    public static final int accessibility_custom_action_31
-    public static final int accessibility_custom_action_4
-    public static final int accessibility_custom_action_5
-    public static final int accessibility_custom_action_6
-    public static final int accessibility_custom_action_7
-    public static final int accessibility_custom_action_8
-    public static final int accessibility_custom_action_9
-    public static final int androidx_startup
-    public static final int bottomsheet_action_expand_halfway
-    public static final int character_counter_content_description
-    public static final int character_counter_overflowed_content_description
-    public static final int character_counter_pattern
-    public static final int clear_text_end_icon_content_description
-    public static final int common_google_play_services_unknown_issue
-    public static final int design_error
-    public static final int error_icon_content_description
-    public static final int exposed_dropdown_menu_content_description
-    public static final int material_timepicker_clockface
-    public static final int mtrl_chip_close_icon_content_description
-    public static final int mtrl_filled_background_color
-    public static final int mtrl_picker_announce_current_selection
-    public static final int mtrl_picker_day_of_week_column_header
-    public static final int mtrl_picker_navigate_to_year_description
-    public static final int mtrl_picker_toggle_to_calendar_input_mode
-    public static final int mtrl_picker_toggle_to_day_selection
-    public static final int mtrl_picker_toggle_to_text_input_mode
-    public static final int mtrl_picker_toggle_to_year_selection
-    public static final int mtrl_textinput_default_box_stroke_color
-    public static final int mtrl_textinput_disabled_color
-    public static final int mtrl_textinput_hovered_box_stroke_color
-    public static final int password_toggle_content_description
-    public static final int support_simple_spinner_dropdown_item
-    public static final int tag_accessibility_actions
-    public static final int tag_accessibility_clickable_spans
-    public static final int tag_accessibility_heading
-    public static final int tag_accessibility_pane_title
-    public static final int tag_on_apply_window_listener
-    public static final int tag_on_receive_content_listener
-    public static final int tag_on_receive_content_mime_types
-    public static final int tag_screen_reader_focusable
-    public static final int tag_state_description
-    public static final int tag_transition_group
-    public static final int tag_unhandled_key_event_manager
-    public static final int tag_unhandled_key_listeners
-    public static final int tag_window_insets_animation_callback
-    public static final int view_tree_on_back_pressed_dispatcher_owner
-    public static float clamp(float,float,float)
-    public final int getExpandedComponentIdHint()
-    public final boolean isExpanded()
-    public final void onRestoreInstanceState(android.os.Bundle)
-    public final android.os.Bundle onSaveInstanceState()
-    public final void setExpandedComponentIdHint(int)
-androidx.activity.ViewTreeOnBackPressedDispatcherOwner:
-    public static final int CardView
-    public static final int abc_action_bar_embed_tabs
-    public static final int abc_action_bar_stacked_max_height
-    public static final int abc_action_bar_stacked_tab_max_width
-    public static final int abc_action_bar_up_description
-    public static final int abc_cascading_menus_min_smallest_width
-    public static final int abc_config_prefDialogWidth
-    public static final int abc_dropdownitem_icon_width
-    public static final int abc_dropdownitem_text_padding_left
-    public static final int abc_menu_alt_shortcut_label
-    public static final int abc_menu_ctrl_shortcut_label
-    public static final int abc_menu_delete_shortcut_label
-    public static final int abc_menu_enter_shortcut_label
-    public static final int abc_menu_function_shortcut_label
-    public static final int abc_menu_meta_shortcut_label
-    public static final int abc_menu_shift_shortcut_label
-    public static final int abc_menu_space_shortcut_label
-    public static final int abc_menu_sym_shortcut_label
-    public static final int abc_prepend_shortcut_label
-    public static final int abc_search_view_preferred_height
-    public static final int abc_search_view_preferred_width
-    public static final int abc_searchview_description_search
-    public static final int abc_star_big
-    public static final int abc_star_medium
-    public static final int abc_star_small
-    public static final int action_bar
-    public static final int action_bar_activity_content
-    public static final int action_bar_container
-    public static final int action_bar_subtitle
-    public static final int action_bar_title
-    public static final int action_context_bar
-    public static final int action_menu_presenter
-    public static final int action_mode_bar_stub
-    public static final int action_mode_close_button
-    public static final int alertTitle
-    public static final int buttonPanel
+    public static final int abc_vector_test
     public static final int cancel_button
-    public static final int cardview_dark_background
-    public static final int cardview_light_background
-    public static final int cardview_shadow_end_color
-    public static final int cardview_shadow_start_color
     public static final int circle_center
     public static final int common_google_play_services_enable_button
     public static final int common_google_play_services_enable_text
@@ -28600,11 +28542,6 @@ androidx.activity.ViewTreeOnBackPressedDispatcherOwner:
     public static final int common_google_play_services_wear_update_text
     public static final int common_open_on_phone
     public static final int confirm_button
-    public static final int content
-    public static final int contentPanel
-    public static final int custom
-    public static final int customPanel
-    public static final int decor_content_parent
     public static final int design_appbar_elevation
     public static final int design_bottom_sheet_peek_height_min
     public static final int design_fab_size_mini
@@ -28615,10 +28552,8 @@ androidx.activity.ViewTreeOnBackPressedDispatcherOwner:
     public static final int design_snackbar_padding_vertical
     public static final int design_snackbar_padding_vertical_2lines
     public static final int design_textinput_caption_translate_y
-    public static final int edit_query
     public static final int fragment_container_view_tag
     public static final int fullscreen_header
-    public static final int group_divider
     public static final int material_clock_display
     public static final int material_clock_face
     public static final int material_clock_hand
@@ -28644,7 +28579,6 @@ androidx.activity.ViewTreeOnBackPressedDispatcherOwner:
     public static final int material_time_picker_minimum_screen_height
     public static final int material_time_picker_minimum_screen_width
     public static final int material_value_index
-    public static final int message
     public static final int month_grid
     public static final int month_navigation_fragment_toggle
     public static final int month_navigation_next
@@ -28686,8 +28620,110 @@ androidx.activity.ViewTreeOnBackPressedDispatcherOwner:
     public static final int mtrl_textinput_box_stroke_width_default
     public static final int mtrl_textinput_box_stroke_width_focused
     public static final int mtrl_textinput_counter_margin_start
-    public static final int parentPanel
     public static final int row_index_key
+    public static final int selection_type
+    public static final int snackbar_action
+    public static final int snackbar_text
+    public static final int special_effects_controller_view_tag
+    public static final int support_simple_spinner_dropdown_item
+    public static final int text_input_end_icon
+    public static final int text_input_error_icon
+    public static final int textinput_counter
+    public static final int textinput_error
+    public static final int textinput_helper_text
+    public static final int textinput_placeholder
+    public static final int textinput_prefix_text
+    public static final int textinput_suffix_text
+    public static final int view_tree_lifecycle_owner
+    public static final int view_tree_on_back_pressed_dispatcher_owner
+    public static final int view_tree_saved_state_registry_owner
+    public static final int view_tree_view_model_store_owner
+    public static final int visible_removing_fragment_view_tag
+    public final void animate()
+    public static java.lang.Object checkNotNull(java.lang.Object)
+    public final int convertToConstraintSet(int,int,float,float)
+    public final float getFloatValue(java.lang.Object,java.lang.String,int)
+    public final void setFloatValue(java.lang.Object,java.lang.String,int,float)
+    public final void touchEvent(android.view.MotionEvent)
+    public static android.content.IntentFilter zza(java.lang.String)
+androidx.activity.ViewTreeOnBackPressedDispatcherOwner:
+    public static final int accessibility_action_clickable_span
+    public static final int accessibility_custom_action_0
+    public static final int accessibility_custom_action_1
+    public static final int accessibility_custom_action_10
+    public static final int accessibility_custom_action_11
+    public static final int accessibility_custom_action_12
+    public static final int accessibility_custom_action_13
+    public static final int accessibility_custom_action_14
+    public static final int accessibility_custom_action_15
+    public static final int accessibility_custom_action_16
+    public static final int accessibility_custom_action_17
+    public static final int accessibility_custom_action_18
+    public static final int accessibility_custom_action_19
+    public static final int accessibility_custom_action_2
+    public static final int accessibility_custom_action_20
+    public static final int accessibility_custom_action_21
+    public static final int accessibility_custom_action_22
+    public static final int accessibility_custom_action_23
+    public static final int accessibility_custom_action_24
+    public static final int accessibility_custom_action_25
+    public static final int accessibility_custom_action_26
+    public static final int accessibility_custom_action_27
+    public static final int accessibility_custom_action_28
+    public static final int accessibility_custom_action_29
+    public static final int accessibility_custom_action_3
+    public static final int accessibility_custom_action_30
+    public static final int accessibility_custom_action_31
+    public static final int accessibility_custom_action_4
+    public static final int accessibility_custom_action_5
+    public static final int accessibility_custom_action_6
+    public static final int accessibility_custom_action_7
+    public static final int accessibility_custom_action_8
+    public static final int accessibility_custom_action_9
+    public static final int action_bar
+    public static final int action_bar_activity_content
+    public static final int action_bar_container
+    public static final int action_bar_subtitle
+    public static final int action_bar_title
+    public static final int action_context_bar
+    public static final int action_menu_presenter
+    public static final int action_mode_bar_stub
+    public static final int action_mode_close_button
+    public static final int alertTitle
+    public static final int androidx_startup
+    public static final int bottomsheet_action_expand_halfway
+    public static final int buttonPanel
+    public static final int character_counter_content_description
+    public static final int character_counter_overflowed_content_description
+    public static final int character_counter_pattern
+    public static final int clear_text_end_icon_content_description
+    public static final int common_google_play_services_unknown_issue
+    public static final int content
+    public static final int contentPanel
+    public static final int custom
+    public static final int customPanel
+    public static final int decor_content_parent
+    public static final int design_error
+    public static final int edit_query
+    public static final int error_icon_content_description
+    public static final int exposed_dropdown_menu_content_description
+    public static final int group_divider
+    public static final int material_timepicker_clockface
+    public static final int message
+    public static final int mtrl_chip_close_icon_content_description
+    public static final int mtrl_filled_background_color
+    public static final int mtrl_picker_announce_current_selection
+    public static final int mtrl_picker_day_of_week_column_header
+    public static final int mtrl_picker_navigate_to_year_description
+    public static final int mtrl_picker_toggle_to_calendar_input_mode
+    public static final int mtrl_picker_toggle_to_day_selection
+    public static final int mtrl_picker_toggle_to_text_input_mode
+    public static final int mtrl_picker_toggle_to_year_selection
+    public static final int mtrl_textinput_default_box_stroke_color
+    public static final int mtrl_textinput_disabled_color
+    public static final int mtrl_textinput_hovered_box_stroke_color
+    public static final int parentPanel
+    public static final int password_toggle_content_description
     public static final int scrollIndicatorDown
     public static final int scrollIndicatorUp
     public static final int scrollView
@@ -28699,44 +28735,36 @@ androidx.activity.ViewTreeOnBackPressedDispatcherOwner:
     public static final int search_plate
     public static final int search_src_text
     public static final int search_voice_btn
-    public static final int selection_type
     public static final int shortcut
-    public static final int snackbar_action
-    public static final int snackbar_text
     public static final int spacer
-    public static final int special_effects_controller_view_tag
     public static final int split_action_bar
     public static final int submenuarrow
     public static final int submit_area
+    public static final int tag_accessibility_actions
+    public static final int tag_accessibility_clickable_spans
+    public static final int tag_accessibility_heading
+    public static final int tag_accessibility_pane_title
+    public static final int tag_on_apply_window_listener
+    public static final int tag_on_receive_content_listener
+    public static final int tag_on_receive_content_mime_types
+    public static final int tag_screen_reader_focusable
+    public static final int tag_state_description
+    public static final int tag_transition_group
+    public static final int tag_unhandled_key_event_manager
+    public static final int tag_unhandled_key_listeners
+    public static final int tag_window_insets_animation_callback
     public static final int textSpacerNoButtons
     public static final int textSpacerNoTitle
-    public static final int text_input_end_icon
-    public static final int text_input_error_icon
-    public static final int textinput_counter
-    public static final int textinput_error
-    public static final int textinput_helper_text
-    public static final int textinput_placeholder
-    public static final int textinput_prefix_text
-    public static final int textinput_suffix_text
     public static final int title
     public static final int titleDividerNoCustom
     public static final int title_template
-    public static final int tooltip_precise_anchor_extra_offset
-    public static final int tooltip_precise_anchor_threshold
-    public static final int tooltip_y_offset_non_touch
-    public static final int tooltip_y_offset_touch
     public static final int topPanel
-    public static final int view_tree_lifecycle_owner
-    public static final int view_tree_saved_state_registry_owner
-    public static final int view_tree_view_model_store_owner
-    public static final int visible_removing_fragment_view_tag
-    public final void animate()
-    public static java.lang.Object checkNotNull(java.lang.Object)
-    public final int convertToConstraintSet(int,int,float,float)
-    public final float getFloatValue(java.lang.Object,java.lang.String,int)
-    public final void setFloatValue(java.lang.Object,java.lang.String,int,float)
-    public final void touchEvent(android.view.MotionEvent)
-    public static android.content.IntentFilter zza(java.lang.String)
+    public static float clamp(float,float,float)
+    public final int getExpandedComponentIdHint()
+    public final boolean isExpanded()
+    public final void onRestoreInstanceState(android.os.Bundle)
+    public final android.os.Bundle onSaveInstanceState()
+    public final void setExpandedComponentIdHint(int)
 androidx.activity.contextaware.ContextAwareHelper:
     public final void addOnContextAvailableListener(androidx.activity.contextaware.OnContextAvailableListener)
     public final void clearAvailableContext()
@@ -28781,21 +28809,20 @@ androidx.activity.result.contract.ActivityResultContracts$StartActivityForResult
     public static void <clinit>()
     public final androidx.activity.result.ActivityResult parseResult(int,android.content.Intent)
 androidx.appcompat.R$attr
-androidx.appcompat.R$bool
-androidx.appcompat.R$color:
-    public static final int Animation_AppCompat_Tooltip
-    public static final int Theme_AppCompat_CompactMenu
-    public static final int Theme_AppCompat_Empty
-    public static final int Theme_AppCompat_Light
-    public static final int abc_decor_view_status_guard
-    public static final int abc_decor_view_status_guard_light
-    public static final int abc_tint_btn_checkable
-    public static final int abc_tint_default
-    public static final int abc_tint_edittext
-    public static final int abc_tint_seek_thumb
-    public static final int abc_tint_spinner
-    public static final int abc_tint_switch_track
-    public static final int cardview_compat_inset_shadow
+androidx.appcompat.R$bool:
+    public static final int abc_action_bar_embed_tabs
+    public static final int abc_action_bar_up_description
+    public static final int abc_menu_alt_shortcut_label
+    public static final int abc_menu_ctrl_shortcut_label
+    public static final int abc_menu_delete_shortcut_label
+    public static final int abc_menu_enter_shortcut_label
+    public static final int abc_menu_function_shortcut_label
+    public static final int abc_menu_meta_shortcut_label
+    public static final int abc_menu_shift_shortcut_label
+    public static final int abc_menu_space_shortcut_label
+    public static final int abc_menu_sym_shortcut_label
+    public static final int abc_prepend_shortcut_label
+    public static final int abc_searchview_description_search
     public static final int design_password_eye
     public static final int material_ic_calendar_black_24dp
     public static final int material_ic_edit_black_24dp
@@ -28805,55 +28832,20 @@ androidx.appcompat.R$color:
     public static final int navigation_empty_icon
     public static boolean isMeizuDevice()
     public static void w(java.lang.String)
-androidx.appcompat.R$dimen
-androidx.appcompat.R$drawable:
+androidx.appcompat.R$color
+androidx.appcompat.R$dimen:
     public static final int Widget_Support_CoordinatorLayout
-    public static final int abc_ab_share_pack_mtrl_alpha
-    public static final int abc_btn_borderless_material
-    public static final int abc_btn_check_material
-    public static final int abc_btn_check_material_anim
-    public static final int abc_btn_colored_material
-    public static final int abc_btn_default_mtrl_shape
-    public static final int abc_btn_radio_material
-    public static final int abc_btn_radio_material_anim
-    public static final int abc_cab_background_internal_bg
-    public static final int abc_cab_background_top_material
-    public static final int abc_cab_background_top_mtrl_alpha
-    public static final int abc_dialog_material_background
-    public static final int abc_edit_text_material
-    public static final int abc_ic_ab_back_material
-    public static final int abc_ic_commit_search_api_mtrl_alpha
-    public static final int abc_ic_menu_copy_mtrl_am_alpha
-    public static final int abc_ic_menu_cut_mtrl_alpha
-    public static final int abc_ic_menu_paste_mtrl_am_alpha
-    public static final int abc_ic_menu_selectall_mtrl_alpha
-    public static final int abc_ic_menu_share_mtrl_alpha
-    public static final int abc_list_divider_mtrl_alpha
-    public static final int abc_menu_hardkey_panel_mtrl_mult
-    public static final int abc_popup_background_mtrl_mult
-    public static final int abc_ratingbar_indicator_material
-    public static final int abc_ratingbar_material
-    public static final int abc_ratingbar_small_material
-    public static final int abc_seekbar_thumb_material
-    public static final int abc_seekbar_tick_mark_material
-    public static final int abc_seekbar_track_material
-    public static final int abc_spinner_mtrl_am_alpha
-    public static final int abc_spinner_textfield_background_material
-    public static final int abc_star_black_48dp
-    public static final int abc_star_half_black_48dp
-    public static final int abc_switch_thumb_material
-    public static final int abc_switch_track_mtrl_alpha
-    public static final int abc_tab_indicator_material
-    public static final int abc_text_cursor_material
-    public static final int abc_text_select_handle_left_mtrl
-    public static final int abc_text_select_handle_middle_mtrl
-    public static final int abc_text_select_handle_right_mtrl
-    public static final int abc_textfield_activated_mtrl_alpha
-    public static final int abc_textfield_default_mtrl_alpha
-    public static final int abc_textfield_search_activated_mtrl_alpha
-    public static final int abc_textfield_search_default_mtrl_alpha
-    public static final int abc_textfield_search_material
-    public static final int abc_vector_test
+    public static final int abc_action_bar_stacked_max_height
+    public static final int abc_action_bar_stacked_tab_max_width
+    public static final int abc_cascading_menus_min_smallest_width
+    public static final int abc_config_prefDialogWidth
+    public static final int abc_dropdownitem_icon_width
+    public static final int abc_dropdownitem_text_padding_left
+    public static final int abc_search_view_preferred_height
+    public static final int abc_search_view_preferred_width
+    public static final int abc_star_big
+    public static final int abc_star_medium
+    public static final int abc_star_small
     public static final int app_bar_elevation_anim_duration
     public static final int common_full_open_on_phone
     public static final int fastscroll_default_thickness
@@ -28867,6 +28859,10 @@ androidx.appcompat.R$drawable:
     public static final int fragment_open_exit
     public static final int material_motion_duration_long_1
     public static final int mtrl_calendar_year_selector_span
+    public static final int tooltip_precise_anchor_extra_offset
+    public static final int tooltip_precise_anchor_threshold
+    public static final int tooltip_y_offset_non_touch
+    public static final int tooltip_y_offset_touch
     public static int compositeARGBWithAlpha(int,int)
     public static final int differenceModulo(int,int,int)
     public static final void emptySet()
@@ -28877,6 +28873,7 @@ androidx.appcompat.R$drawable:
     public static int layer(int,int)
     public static final int mod(int,int)
     public static final java.util.Set setOf(java.lang.Object)
+androidx.appcompat.R$drawable
 androidx.appcompat.R$id
 androidx.appcompat.R$layout
 androidx.appcompat.R$string
@@ -29308,12 +29305,17 @@ androidx.appcompat.app.AppCompatViewInflater:
     public final android.view.View createViewFromTag(android.content.Context,java.lang.String,android.util.AttributeSet)
 androidx.appcompat.app.LayoutIncludeDetector:
     private void $r8$constructor$androidx$appcompat$app$LayoutIncludeDetector()
-    private void $r8$constructor$androidx$transition$ViewOverlayApi18(android.view.View)
+    private void $r8$constructor$androidx$lifecycle$MethodCallsLogger()
+    private void $r8$constructor$androidx$lifecycle$viewmodel$InitializerViewModelFactoryBuilder()
     public void <init>()
-    public void <init>(android.view.View)
+    public synthetic void <init>(android.view.ViewGroup)
     public final void add(android.graphics.drawable.Drawable)
+    public final void add(android.view.View)
+    public final void addInitializer(kotlin.reflect.KClass,kotlin.jvm.functions.Function1)
+    public final androidx.lifecycle.ViewModelProvider$Factory build()
     public final boolean detect(android.util.AttributeSet)
     public final void remove(android.graphics.drawable.Drawable)
+    public final void remove(android.view.View)
     public final void setFailedResult(com.google.android.gms.common.api.Status)
 androidx.appcompat.app.ToolbarActionBar
 androidx.appcompat.app.TwilightManager$TwilightState:
@@ -30160,112 +30162,37 @@ androidx.arch.core.internal.SafeIterableMap:
     public final java.util.Map$Entry eldest()
     public final java.util.Map$Entry newest()
     public final int size()
-androidx.cardview.R$attr
-androidx.cardview.R$color
-androidx.cardview.R$dimen
-androidx.cardview.R$style
-androidx.cardview.R$styleable:
-    public static final int CardView_android_minHeight
-    public static final int CardView_android_minWidth
-    public static final int CardView_cardBackgroundColor
-    public static final int CardView_cardCornerRadius
-    public static final int CardView_cardElevation
-    public static final int CardView_cardMaxElevation
-    public static final int CardView_cardPreventCornerOverlap
-    public static final int CardView_cardUseCompatPadding
-    public static final int CardView_contentPadding
-    public static final int CardView_contentPaddingBottom
-    public static final int CardView_contentPaddingLeft
-    public static final int CardView_contentPaddingRight
-    public static final int CardView_contentPaddingTop
-androidx.cardview.widget.CardView$1:
-    public final android.graphics.drawable.Drawable getCardBackground()
-    public final android.view.View getCardView()
-    public final boolean getUseCompatPadding()
-    public final void setCardBackground(android.graphics.drawable.Drawable)
-    public final void setMinWidthHeightInternal(int,int)
 androidx.cardview.widget.CardView:
-    public static synthetic void access$101(androidx.cardview.widget.CardView,int)
-    public static synthetic void access$201(androidx.cardview.widget.CardView,int)
+    public static final int[] COLOR_BACKGROUND_ATTR
+    public final androidx.cardview.widget.CardViewDelegate mCardViewDelegate
+    public final android.graphics.Rect mContentPadding
+    public int mUserSetMinHeight
+    public int mUserSetMinWidth
 androidx.cardview.widget.CardViewApi17Impl$1
 androidx.cardview.widget.CardViewApi17Impl
 androidx.cardview.widget.CardViewApi21Impl:
     public final android.content.res.ColorStateList getBackgroundColor(androidx.cardview.widget.CardViewDelegate)
+    public final androidx.cardview.widget.RoundRectDrawable getCardBackground(androidx.cardview.widget.CardViewDelegate)
     public final float getElevation(androidx.cardview.widget.CardViewDelegate)
+    public final float getMaxElevation(androidx.cardview.widget.CardViewDelegate)
     public final float getMinHeight(androidx.cardview.widget.CardViewDelegate)
     public final float getMinWidth(androidx.cardview.widget.CardViewDelegate)
+    public final float getRadius(androidx.cardview.widget.CardViewDelegate)
     public final void initStatic()
-    public final void initialize(androidx.cardview.widget.CardViewDelegate,android.content.Context,android.content.res.ColorStateList,float,float,float)
     public final void onCompatPaddingChanged(androidx.cardview.widget.CardViewDelegate)
     public final void onPreventCornerOverlapChanged(androidx.cardview.widget.CardViewDelegate)
     public final void setBackgroundColor(androidx.cardview.widget.CardViewDelegate,android.content.res.ColorStateList)
     public final void setElevation(androidx.cardview.widget.CardViewDelegate,float)
+    public final void setMaxElevation(androidx.cardview.widget.CardViewDelegate,float)
     public final void setRadius(androidx.cardview.widget.CardViewDelegate,float)
     public final void updatePadding(androidx.cardview.widget.CardViewDelegate)
 androidx.cardview.widget.CardViewBaseImpl$1
 androidx.cardview.widget.CardViewBaseImpl
-androidx.cardview.widget.CardViewDelegate:
-    public abstract android.graphics.drawable.Drawable getCardBackground()
-    public abstract android.view.View getCardView()
-    public abstract boolean getPreventCornerOverlap()
-    public abstract boolean getUseCompatPadding()
-    public abstract void setCardBackground(android.graphics.drawable.Drawable)
-    public abstract void setMinWidthHeightInternal(int,int)
-    public abstract void setShadowPadding(int,int,int,int)
+androidx.cardview.widget.CardViewDelegate
 androidx.cardview.widget.CardViewImpl
-androidx.cardview.widget.RoundRectDrawable:
-    public final android.content.res.ColorStateList getColor()
-    public final float getPadding()
-    public final float getRadius()
-    public final void setColor(android.content.res.ColorStateList)
-    public final void setPadding(float,boolean,boolean)
-    public final void setRadius(float)
+androidx.cardview.widget.RoundRectDrawable
 androidx.cardview.widget.RoundRectDrawableWithShadow$RoundRectHelper
-androidx.cardview.widget.RoundRectDrawableWithShadow:
-    public boolean mAddPaddingForCorners
-    public android.content.res.ColorStateList mBackground
-    public final android.graphics.RectF mCardBounds
-    public float mCornerRadius
-    public android.graphics.Paint mCornerShadowPaint
-    public android.graphics.Path mCornerShadowPath
-    public boolean mDirty
-    public android.graphics.Paint mEdgeShadowPaint
-    public final int mInsetShadow
-    public android.graphics.Paint mPaint
-    public boolean mPrintedShadowClipWarning
-    public float mRawMaxShadowSize
-    public float mRawShadowSize
-    public final int mShadowEndColor
-    public float mShadowSize
-    public final int mShadowStartColor
-    public static androidx.cardview.widget.RoundRectDrawableWithShadow$RoundRectHelper sRoundRectHelper
-    public void <init>(android.content.res.Resources,android.content.res.ColorStateList,float,float,float)
-    public final void buildComponents(android.graphics.Rect)
-    public final void buildShadowCorners()
-    public final void draw(android.graphics.Canvas)
-    public final void drawShadow(android.graphics.Canvas)
-    public final android.content.res.ColorStateList getColor()
-    public final float getCornerRadius()
-    public final void getMaxShadowAndCornerPadding(android.graphics.Rect)
-    public final float getMaxShadowSize()
-    public final float getMinHeight()
-    public final float getMinWidth()
-    public final int getOpacity()
-    public final boolean getPadding(android.graphics.Rect)
-    public final float getShadowSize()
-    public final boolean isStateful()
-    public final void onBoundsChange(android.graphics.Rect)
-    public final boolean onStateChange(int[])
-    public final void setAddPaddingForCorners(boolean)
-    public final void setAlpha(int)
-    public final void setBackground(android.content.res.ColorStateList)
-    public final void setColor(android.content.res.ColorStateList)
-    public final void setColorFilter(android.graphics.ColorFilter)
-    public final void setCornerRadius(float)
-    public final void setMaxShadowSize(float)
-    public final void setShadowSize(float)
-    public final void setShadowSize(float,float)
-    public final int toEven(float)
+androidx.cardview.widget.RoundRectDrawableWithShadow
 androidx.collection.ArrayMap:
     public final boolean retainAll(java.util.Collection)
 androidx.collection.ArraySet:
@@ -30824,7 +30751,7 @@ androidx.constraintlayout.motion.widget.MotionLayout:
     public android.view.animation.Interpolator mInterpolator
     public android.graphics.Matrix mInverseMatrix
     public boolean mIsAnimating
-    public androidx.activity.ViewTreeOnBackPressedDispatcherOwner mKeyCache
+    public androidx.activity.R$id mKeyCache
     public long mLastDrawTime
     public float mLastFps
     public int mLastHeightMeasureSpec
@@ -30886,8 +30813,8 @@ androidx.constraintlayout.motion.widget.MotionScene$Transition:
     public final boolean isTransitionFlag(int)
 androidx.constraintlayout.motion.widget.MotionScene:
     public androidx.constraintlayout.motion.widget.MotionScene$Transition mCurrentTransition
-    public androidx.activity.ViewTreeOnBackPressedDispatcherOwner mStateSet
-    public final androidx.activity.ViewTreeOnBackPressedDispatcherOwner mViewTransitionController
+    public androidx.activity.R$id mStateSet
+    public final androidx.activity.R$id mViewTransitionController
     public final void addOnClickListeners(androidx.constraintlayout.motion.widget.MotionLayout,int)
     public final boolean autoTransition(androidx.constraintlayout.motion.widget.MotionLayout,int)
     public final androidx.constraintlayout.widget.ConstraintSet getConstraintSet(int)
@@ -32694,8 +32621,6 @@ androidx.fragment.app.BackStackRecord:
     public final void dump(java.lang.String,java.io.PrintWriter)
     public final androidx.fragment.app.Fragment expandOps(java.util.ArrayList,androidx.fragment.app.Fragment)
     public final java.lang.String getName()
-    public final boolean interactsWith(int)
-    public final boolean interactsWith(java.util.ArrayList,int,int)
     public static boolean isFragmentPostponed(androidx.fragment.app.FragmentTransaction$Op)
     public final boolean isPostponed()
     public final androidx.fragment.app.FragmentTransaction remove(androidx.fragment.app.Fragment)
@@ -32757,16 +32682,15 @@ androidx.fragment.app.Fragment$3
 androidx.fragment.app.Fragment$AnimationInfo:
     public java.lang.Boolean mAllowEnterTransitionOverlap
     public java.lang.Boolean mAllowReturnTransitionOverlap
-    public android.animation.Animator mAnimator
     public java.lang.Object mEnterTransition
     public androidx.core.app.SharedElementCallback mEnterTransitionCallback
     public boolean mEnterTransitionPostponed
     public java.lang.Object mExitTransition
     public androidx.core.app.SharedElementCallback mExitTransitionCallback
-    public boolean mIsHideReplaced
     public java.lang.Object mSharedElementEnterTransition
-    public androidx.fragment.app.Fragment$OnStartEnterTransitionListener mStartEnterTransitionListener
-androidx.fragment.app.Fragment$OnStartEnterTransitionListener
+androidx.fragment.app.Fragment$OnStartEnterTransitionListener:
+    public abstract void onStartEnterTransition()
+    public abstract void startListening()
 androidx.fragment.app.Fragment:
     public int mContentLayoutId
     public androidx.lifecycle.ViewModelProvider$Factory mDefaultFactory
@@ -32774,7 +32698,6 @@ androidx.fragment.app.Fragment:
     public boolean mIsNewlyAdded
     public android.view.LayoutInflater mLayoutInflater
     public final java.util.concurrent.atomic.AtomicInteger mNextLocalRequestCode
-    public float mPostponedAlpha
     public java.lang.Runnable mPostponedDurationRunnable
     public boolean mRetainInstanceChangedWhileDetached
     public java.lang.Boolean mSavedUserVisibleHint
@@ -32807,7 +32730,6 @@ androidx.fragment.app.Fragment:
     public final boolean isMenuVisible()
     public final boolean isPostponed()
     public final boolean isRemoving()
-    public final boolean isRemovingParent()
     public final boolean isStateSaved()
     public final void noteStateNotSaved()
     public final void onActivityCreated(android.os.Bundle)
@@ -32852,17 +32774,12 @@ androidx.fragment.app.Fragment:
     public final androidx.fragment.app.FragmentActivity requireActivity()
     public final void restoreViewState()
     public final void restoreViewState(android.os.Bundle)
-    public final void setAnimatingAway(android.view.View)
-    public final void setAnimator(android.animation.Animator)
-    public final void setHideReplaced(boolean)
     public final void setNextTransition(int)
-    public final void setOnStartEnterTransitionListener(androidx.fragment.app.Fragment$OnStartEnterTransitionListener)
     public final void setPostOnViewCreatedAlpha(float)
     public final void setSharedElementNames(java.util.ArrayList,java.util.ArrayList)
     public final void startPostponedEnterTransition()
 androidx.fragment.app.FragmentActivity$HostCallbacks:
     public final androidx.fragment.app.FragmentActivity onGetHost()
-    public final boolean onShouldSaveFragmentState()
 androidx.fragment.app.FragmentActivity:
     public final android.view.View dispatchFragmentsOnCreateView(android.view.View,java.lang.String,android.content.Context,android.util.AttributeSet)
     public final androidx.fragment.app.FragmentManager getSupportFragmentManager()
@@ -32871,10 +32788,6 @@ androidx.fragment.app.FragmentActivity:
     public final void onAttachFragment(androidx.fragment.app.Fragment)
     public final boolean onPrepareOptionsPanel(android.view.View,android.view.Menu)
     public final void onResumeFragments()
-androidx.fragment.app.FragmentAnim$1
-androidx.fragment.app.FragmentAnim$2$1
-androidx.fragment.app.FragmentAnim$2
-androidx.fragment.app.FragmentAnim$3
 androidx.fragment.app.FragmentContainer:
     public abstract androidx.fragment.app.Fragment instantiate()
 androidx.fragment.app.FragmentController:
@@ -32908,7 +32821,6 @@ androidx.fragment.app.FragmentHostCallback:
     final android.os.Handler getHandler()
     public android.view.View onFindViewById(int)
     public boolean onHasView()
-    public boolean onShouldSaveFragmentState()
 androidx.fragment.app.FragmentLifecycleCallbacksDispatcher$FragmentLifecycleCallbacksHolder:
     public final androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks mCallback
     public final boolean mRecursive
@@ -32916,9 +32828,6 @@ androidx.fragment.app.FragmentManager$10:
     public final void onActivityResult(androidx.activity.result.ActivityResult)
 androidx.fragment.app.FragmentManager$11:
     public final void onActivityResult(java.util.Map)
-androidx.fragment.app.FragmentManager$2:
-    public final void onComplete(androidx.fragment.app.Fragment,androidx.core.os.CancellationSignal)
-    public final void onStart(androidx.fragment.app.Fragment,androidx.core.os.CancellationSignal)
 androidx.fragment.app.FragmentManager$4:
     public final synthetic androidx.fragment.app.FragmentManager this$0
     public final androidx.fragment.app.SpecialEffectsController createController(android.view.ViewGroup)
@@ -32941,13 +32850,17 @@ androidx.fragment.app.FragmentManager$LaunchedFragmentInfo$1:
 androidx.fragment.app.FragmentManager$OnBackStackChangedListener
 androidx.fragment.app.FragmentManager$PopBackStackState:
     public final java.lang.String mName
-androidx.fragment.app.FragmentManager$StartEnterTransitionListener
+androidx.fragment.app.FragmentManager$StartEnterTransitionListener:
+    public void <init>(androidx.fragment.app.BackStackRecord,boolean)
+    public final void cancelTransaction()
+    public final boolean isReady()
+    public final void onStartEnterTransition()
+    public final void startListening()
 androidx.fragment.app.FragmentManager:
     public static boolean DEBUG
     public static boolean USE_STATE_MANAGER
     public java.util.ArrayList mBackStackChangeListeners
     public androidx.fragment.app.FragmentFactory mFragmentFactory
-    public java.util.ArrayList mPostponedTransactions
     public final java.util.Map mResultListeners
     public androidx.fragment.app.SpecialEffectsControllerFactory mSpecialEffectsControllerFactory
     public static void <clinit>()
@@ -32958,14 +32871,11 @@ androidx.fragment.app.FragmentManager:
     public final void addFragmentOnAttachListener(androidx.fragment.app.FragmentOnAttachListener)
     public abstract int allocBackStackIndex()
     public final androidx.fragment.app.FragmentTransaction beginTransaction()
-    public final void cancelExitAnimation(androidx.fragment.app.Fragment)
     public abstract boolean checkForMenus()
     public final void checkStateLoss()
     public final void clearFragmentResult(java.lang.String)
     public abstract java.util.Set collectChangedControllers()
-    public final void completeExecute(androidx.fragment.app.BackStackRecord,boolean,boolean,boolean)
     public abstract void completeShowHideFragment()
-    public final void destroyFragmentView(androidx.fragment.app.Fragment)
     public final void dispatchActivityCreated()
     public abstract void dispatchAttach()
     public abstract void dispatchDestroyView()
@@ -33000,12 +32910,11 @@ androidx.fragment.app.FragmentManager:
     public abstract void makeRemovedFragmentsInvisible()
     public final void moveFragmentToExpectedState(androidx.fragment.app.Fragment)
     public final void moveToState(androidx.fragment.app.Fragment)
-    public final void moveToState(androidx.fragment.app.Fragment,int)
     public abstract void onContainerAvailable()
     public abstract void performPendingDeferredStart()
     public abstract void popBackStack()
     public abstract boolean popBackStackImmediate()
-    public abstract int postponePostponableTransactions()
+    public final int postponePostponableTransactions(java.util.ArrayList,java.util.ArrayList,int,int,androidx.collection.ArraySet)
     public abstract void removeCancellationSignal()
     public final void reportBackStackChanged()
 androidx.fragment.app.FragmentManagerState$1:
@@ -33068,25 +32977,16 @@ androidx.fragment.app.FragmentTransaction:
     public abstract androidx.fragment.app.FragmentTransaction replace()
     public abstract androidx.fragment.app.FragmentTransaction replace$1()
     public abstract androidx.fragment.app.FragmentTransaction setReorderingAllowed()
-androidx.fragment.app.FragmentTransition$1
-androidx.fragment.app.FragmentTransition$2
 androidx.fragment.app.FragmentTransition$3
 androidx.fragment.app.FragmentTransition$4
-androidx.fragment.app.FragmentTransition$5
 androidx.fragment.app.FragmentTransition$6
-androidx.fragment.app.FragmentTransition$Callback
-androidx.fragment.app.FragmentTransition$FragmentContainerTransition
+androidx.fragment.app.FragmentTransition$Callback:
+    public abstract void onComplete(androidx.fragment.app.Fragment,androidx.core.os.CancellationSignal)
+    public abstract void onStart(androidx.fragment.app.Fragment,androidx.core.os.CancellationSignal)
 androidx.fragment.app.FragmentTransition:
-    public static void addSharedElementsWithMatchingNames(java.util.ArrayList,androidx.collection.ArrayMap,java.util.Collection)
-    public static void addToFirstInLastOut(androidx.fragment.app.BackStackRecord,androidx.fragment.app.FragmentTransaction$Op,android.util.SparseArray,boolean)
     public static void calculateFragments(androidx.fragment.app.BackStackRecord,android.util.SparseArray,boolean)
     public static androidx.collection.ArrayMap calculateNameOverrides(int,java.util.ArrayList,java.util.ArrayList,int,int)
     public static void calculatePopFragments(androidx.fragment.app.BackStackRecord,android.util.SparseArray,boolean)
-    public static boolean canHandleAll(androidx.fragment.app.FragmentTransitionImpl,java.util.List)
-    public static androidx.collection.ArrayMap captureInSharedElements(androidx.fragment.app.FragmentTransitionImpl,androidx.collection.ArrayMap,java.lang.Object,androidx.fragment.app.FragmentTransition$FragmentContainerTransition)
-    public static androidx.collection.ArrayMap captureOutSharedElements(androidx.fragment.app.FragmentTransitionImpl,androidx.collection.ArrayMap,java.lang.Object,androidx.fragment.app.FragmentTransition$FragmentContainerTransition)
-    public static androidx.fragment.app.FragmentTransitionImpl chooseImpl(androidx.fragment.app.Fragment,androidx.fragment.app.Fragment)
-    public static java.util.ArrayList configureEnteringExitingViews(androidx.fragment.app.FragmentTransitionImpl,java.lang.Object,androidx.fragment.app.Fragment,java.util.ArrayList,android.view.View)
     public static java.lang.Object configureSharedElementsOrdered(androidx.fragment.app.FragmentTransitionImpl,android.view.ViewGroup,android.view.View,androidx.collection.ArrayMap,androidx.fragment.app.FragmentTransition$FragmentContainerTransition,java.util.ArrayList,java.util.ArrayList,java.lang.Object,java.lang.Object)
     public static java.lang.Object configureSharedElementsReordered(androidx.fragment.app.FragmentTransitionImpl,android.view.ViewGroup,android.view.View,androidx.collection.ArrayMap,androidx.fragment.app.FragmentTransition$FragmentContainerTransition,java.util.ArrayList,java.util.ArrayList,java.lang.Object,java.lang.Object)
     public static void configureTransitionsOrdered(android.view.ViewGroup,androidx.fragment.app.FragmentTransition$FragmentContainerTransition,android.view.View,androidx.collection.ArrayMap,androidx.fragment.app.FragmentTransition$Callback)
@@ -33095,13 +32995,9 @@ androidx.fragment.app.FragmentTransition:
     public static java.lang.String findKeyForValue(androidx.collection.ArrayMap,java.lang.String)
     public static java.lang.Object getEnterTransition(androidx.fragment.app.FragmentTransitionImpl,androidx.fragment.app.Fragment,boolean)
     public static java.lang.Object getExitTransition(androidx.fragment.app.FragmentTransitionImpl,androidx.fragment.app.Fragment,boolean)
-    public static android.view.View getInEpicenterView(androidx.collection.ArrayMap,androidx.fragment.app.FragmentTransition$FragmentContainerTransition,java.lang.Object,boolean)
-    public static java.lang.Object getSharedElementTransition(androidx.fragment.app.FragmentTransitionImpl,androidx.fragment.app.Fragment,androidx.fragment.app.Fragment,boolean)
     public static java.lang.Object mergeTransitions(androidx.fragment.app.FragmentTransitionImpl,java.lang.Object,java.lang.Object,java.lang.Object,androidx.fragment.app.Fragment,boolean)
     public static void replaceHide(androidx.fragment.app.FragmentTransitionImpl,java.lang.Object,androidx.fragment.app.Fragment,java.util.ArrayList)
     public static void scheduleTargetChange(androidx.fragment.app.FragmentTransitionImpl,android.view.ViewGroup,androidx.fragment.app.Fragment,android.view.View,java.util.ArrayList,java.lang.Object,java.util.ArrayList,java.lang.Object,java.util.ArrayList)
-    public static void setOutEpicenter(androidx.fragment.app.FragmentTransitionImpl,java.lang.Object,java.lang.Object,androidx.collection.ArrayMap,boolean,androidx.fragment.app.BackStackRecord)
-    public static void startTransitions(android.content.Context,androidx.fragment.app.FragmentContainer,java.util.ArrayList,java.util.ArrayList,androidx.fragment.app.FragmentTransition$Callback)
 androidx.fragment.app.FragmentTransitionCompat21$1:
     public final synthetic androidx.fragment.app.FragmentTransitionCompat21 this$0
 androidx.fragment.app.FragmentTransitionCompat21$2:
@@ -33117,10 +33013,8 @@ androidx.fragment.app.FragmentTransitionImpl$1:
 androidx.fragment.app.FragmentTransitionImpl$2
 androidx.fragment.app.FragmentTransitionImpl$3
 androidx.fragment.app.FragmentTransitionImpl:
-    public final void captureTransitioningViews(java.util.ArrayList,android.view.View)
     public static boolean containedBeforeIndex(java.util.List,android.view.View,int)
     public static java.lang.String findKeyForValue(java.util.Map,java.lang.String)
-    public final void findNamedViews(java.util.Map,android.view.View)
     public abstract void removeTarget(java.lang.Object,android.view.View)
     public abstract void replaceTargets(java.lang.Object,java.util.ArrayList,java.util.ArrayList)
     public abstract void scheduleNameReset()
@@ -33210,18 +33104,7 @@ androidx.lifecycle.LiveData:
     public abstract boolean hasActiveObservers()
     public final void observe(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
     public abstract void setValue(java.lang.Object)
-androidx.lifecycle.MethodCallsLogger:
-    private void $r8$constructor$androidx$lifecycle$MethodCallsLogger()
-    private void $r8$constructor$androidx$lifecycle$viewmodel$InitializerViewModelFactoryBuilder()
-    public void <init>()
-    public synthetic void <init>(android.view.ViewGroup)
-    public final void add(android.graphics.drawable.Drawable)
-    public final void add(android.view.View)
-    public final void addInitializer(kotlin.reflect.KClass,kotlin.jvm.functions.Function1)
-    public final androidx.lifecycle.ViewModelProvider$Factory build()
-    public final void remove(android.graphics.drawable.Drawable)
-    public final void remove(android.view.View)
-    public final void setFailedResult(com.google.android.gms.common.api.Status)
+androidx.lifecycle.MethodCallsLogger
 androidx.lifecycle.Observer:
     public abstract void onChanged(java.lang.Object)
 androidx.lifecycle.ProcessLifecycleInitializer:
@@ -33245,7 +33128,6 @@ androidx.lifecycle.ReportFragment:
     public final void dispatchResume(androidx.lifecycle.ReportFragment$ActivityInitializationListener)
     public final void dispatchStart(androidx.lifecycle.ReportFragment$ActivityInitializationListener)
     public final void setProcessListener(androidx.lifecycle.ReportFragment$ActivityInitializationListener)
-androidx.lifecycle.SavedStateHandle$$InternalSyntheticLambda$1$c70f9b22894bb1b1031013e177ef365df1be52e75941faf11fc45a5cc464eb9e$0
 androidx.lifecycle.SavedStateHandle$Companion
 androidx.lifecycle.SavedStateHandle:
     public static final androidx.lifecycle.SavedStateHandle Companion
@@ -34120,7 +34002,12 @@ androidx.transition.ViewGroupUtilsApi14$1
 androidx.transition.ViewGroupUtilsApi14
 androidx.transition.ViewOverlayApi14$OverlayViewGroup
 androidx.transition.ViewOverlayApi14
-androidx.transition.ViewOverlayApi18
+androidx.transition.ViewOverlayApi18:
+    private void $r8$constructor$androidx$transition$ViewOverlayApi18(android.view.View)
+    public void <init>(android.view.View)
+    public final void add(android.graphics.drawable.Drawable)
+    public final void remove(android.graphics.drawable.Drawable)
+    public final void setFailedResult(com.google.android.gms.common.api.Status)
 androidx.transition.ViewOverlayImpl
 androidx.transition.ViewUtils$1:
     public final java.lang.Float get(android.view.View)
@@ -34531,6 +34418,7 @@ com.google.android.gms.common.api.internal.zav:
     public final void zaa(com.google.android.gms.tasks.TaskCompletionSource,boolean)
     public final boolean zaa()
     public final void zab()
+com.google.android.gms.common.api.internal.zaw
 com.google.android.gms.common.api.internal.zay
 com.google.android.gms.common.api.internal.zaz:
     public final com.google.android.gms.common.api.internal.ApiKey zaa
@@ -34809,7 +34697,7 @@ com.google.android.gms.internal.wearable.zzc:
 com.google.android.gms.internal.wearable.zze
 com.google.android.gms.internal.wearable.zzf
 com.google.android.gms.internal.wearable.zzg:
-    public synthetic void <init>(androidx.activity.R$id)
+    public synthetic void <init>(androidx.activity.ViewTreeOnBackPressedDispatcherOwner)
     public final void getCornerPath(com.google.android.material.shape.ShapePath,float,float,android.graphics.RectF,com.google.android.material.shape.CornerSize)
 com.google.android.gms.internal.wearable.zzh
 com.google.android.gms.signin.SignInOptions$zaa
@@ -36233,7 +36121,7 @@ com.google.android.material.floatingactionbutton.FloatingActionButton$ShadowDele
     public final void setShadowPadding(int,int,int,int)
 com.google.android.material.floatingactionbutton.FloatingActionButton:
     public static final int DEF_STYLE_RES
-    public final androidx.activity.R$id expandableWidgetHelper
+    public final androidx.activity.ViewTreeOnBackPressedDispatcherOwner expandableWidgetHelper
     public final androidx.appcompat.widget.AppCompatImageHelper imageHelper
     public final android.graphics.Rect shadowPadding
     public final android.graphics.Rect touchArea
@@ -37013,9 +36901,7 @@ com.igorbresende.ubwear.LanguageMaps:
     public final java.util.Map createMapPt()
     public final void createSupportedLanguagesMap()
 com.igorbresende.ubwear.MainActivity$$InternalSyntheticLambda$0$645dec65fe193da499dc7a8b116041393f820e225de99740dcb0df1fd53b0d2e$0
-com.igorbresende.ubwear.MainActivity$$InternalSyntheticLambda$0$645dec65fe193da499dc7a8b116041393f820e225de99740dcb0df1fd53b0d2e$1
-com.igorbresende.ubwear.MainActivity$$InternalSyntheticLambda$1$474f8765d8a78bcca46623808baa5ce1a88800d62c7f6b32fe70a950a620a4de$0
-com.igorbresende.ubwear.MainActivity$$InternalSyntheticLambda$2$0d9ef3b4cfdbf6274d782e59ecdf4f341fc7a07faf126925fe6ca39881e5f340$0
+com.igorbresende.ubwear.MainActivity$$InternalSyntheticLambda$0$bd1fcfd0ffe0d06493855e6b30de9a5851f608b9ff8a6800a128e20906cf04b5$0
 com.igorbresende.ubwear.MainActivity$initialiseDevicePairing$1$1:
     public int label
     public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope,kotlin.coroutines.Continuation)
@@ -37023,22 +36909,18 @@ com.igorbresende.ubwear.MainActivity$initialiseDevicePairing$1:
     public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope,kotlin.coroutines.Continuation)
 com.igorbresende.ubwear.MainActivity:
     public java.lang.String wearableNodeUri
-    public static final synthetic com.igorbresende.ubwear.databinding.ActivityMainBinding access$getBinding$p(com.igorbresende.ubwear.MainActivity)
+    public static final synthetic boolean access$getGotCookies$p(com.igorbresende.ubwear.MainActivity)
     public static final synthetic java.util.Map access$getLanguageMaps$p(com.igorbresende.ubwear.MainActivity)
     public static final synthetic void access$setWearableDeviceConnected$p(com.igorbresende.ubwear.MainActivity,boolean)
     public final android.content.Context getActivityContext()
     public final kotlin.coroutines.CoroutineContext getCoroutineContext()
     public final boolean[] getNodes(android.content.Context)
-    public final void initialiseDevicePairing(android.app.Activity)
+    public final void initialiseDevicePairing(android.app.Activity,boolean)
     public final boolean validateCookies(java.lang.String)
 com.igorbresende.ubwear.databinding.ActivityMainBinding:
     public final com.google.android.material.appbar.AppBarLayout appbarlayout
-    public final android.widget.LinearLayout csidTextViewLayout
     public final android.widget.RelativeLayout rootView
-    public final android.widget.ScrollView scrollView
     public final android.widget.LinearLayout sidCsidInfo
-    public final android.widget.LinearLayout sidTextViewLayout
-    public final android.widget.TextView tutorialTextView
     public final android.widget.RelativeLayout getRoot()
 kotlin.ExceptionsKt
 kotlin.ExceptionsKt__ExceptionsKt
@@ -37390,8 +37272,8 @@ kotlinx.coroutines.EventLoopImplPlatform:
     public final void unpark()
 kotlinx.coroutines.EventLoopKt
 kotlinx.coroutines.EventLoop_commonKt:
-    public static final synthetic androidx.appcompat.app.LayoutIncludeDetector access$getCLOSED_EMPTY$p()
-    public static final synthetic androidx.appcompat.app.LayoutIncludeDetector access$getDISPOSED_TASK$p()
+    public static final synthetic androidx.transition.ViewOverlayApi18 access$getCLOSED_EMPTY$p()
+    public static final synthetic androidx.transition.ViewOverlayApi18 access$getDISPOSED_TASK$p()
 kotlinx.coroutines.ExecutorCoroutineDispatcher$Key$1
 kotlinx.coroutines.ExecutorCoroutineDispatcher$Key
 kotlinx.coroutines.ExecutorCoroutineDispatcher:
@@ -37452,12 +37334,12 @@ kotlinx.coroutines.JobSupport:
     public final boolean tryMakeCancelling(kotlinx.coroutines.Incomplete,java.lang.Throwable)
     public final java.lang.Object tryMakeCompletingSlowPath(kotlinx.coroutines.Incomplete,java.lang.Object)
 kotlinx.coroutines.JobSupportKt:
-    public static final synthetic androidx.appcompat.app.LayoutIncludeDetector access$getCOMPLETING_ALREADY$p()
-    public static final synthetic androidx.appcompat.app.LayoutIncludeDetector access$getCOMPLETING_RETRY$p()
+    public static final synthetic androidx.transition.ViewOverlayApi18 access$getCOMPLETING_ALREADY$p()
+    public static final synthetic androidx.transition.ViewOverlayApi18 access$getCOMPLETING_RETRY$p()
     public static final synthetic void access$getEMPTY_ACTIVE$p()
     public static final synthetic void access$getEMPTY_NEW$p()
-    public static final synthetic androidx.appcompat.app.LayoutIncludeDetector access$getSEALED$p()
-    public static final synthetic androidx.appcompat.app.LayoutIncludeDetector access$getTOO_LATE_TO_CANCEL$p()
+    public static final synthetic androidx.transition.ViewOverlayApi18 access$getSEALED$p()
+    public static final synthetic androidx.transition.ViewOverlayApi18 access$getTOO_LATE_TO_CANCEL$p()
     public static final java.lang.Object boxIncomplete(java.lang.Object)
     public static final java.lang.Object unboxState(java.lang.Object)
 kotlinx.coroutines.LazyStandaloneCoroutine
@@ -37502,7 +37384,7 @@ kotlinx.coroutines.internal.DispatchedContinuation:
     public final java.lang.StackTraceElement getStackTraceElement()
     public final boolean isReusable()
 kotlinx.coroutines.internal.DispatchedContinuationKt:
-    public static final synthetic androidx.appcompat.app.LayoutIncludeDetector access$getUNDEFINED$p()
+    public static final synthetic androidx.transition.ViewOverlayApi18 access$getUNDEFINED$p()
     public static synthetic void resumeCancellableWith$default(kotlin.coroutines.Continuation,java.lang.Object)
 kotlinx.coroutines.internal.ExceptionsConstructorKt$createConstructor$$inlined$sortedByDescending$1
 kotlinx.coroutines.internal.ExceptionsConstructorKt$createConstructor$nullResult$1
