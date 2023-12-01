@@ -9,8 +9,8 @@ android {
         applicationId "com.igorbresende.ubwear"
         minSdkVersion 25
         targetSdkVersion 33
-        versionCode 109
-        versionName "1.0"
+        versionCode 204
+        versionName "2.0"
     }
 
     buildFeatures {
@@ -31,6 +31,7 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    namespace 'com.igorbresende.ubwear'
 }
 
 dependencies {
@@ -56,8 +57,11 @@ dependencies {
     implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
 
     implementation "com.orhanobut:hawk:2.0.1"
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 
     compileOnly 'com.google.android.wearable:wearable:2.9.0'
     implementation 'com.google.android.support:wearable:2.9.0'
     testImplementation 'junit:junit:4.13.2'
+
 }
